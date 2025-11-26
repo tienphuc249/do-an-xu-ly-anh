@@ -65,7 +65,7 @@ def compare_folders(folderA, folderB, output="result.txt"):
             S = ssim(img1, img2)
 
             f.write(f"{fileA} ↔ {match} : MSE={M:.4f}, SSIM={S:.4f}\n")
-            print(f"✔ {fileA} ↔ {match} : MSE={M:.4f}, SSIM={S:.4f}")
+            print(f" {fileA} ↔ {match} : MSE={M:.4f}, SSIM={S:.4f}")
 
     print("\n successful!", output)
 
@@ -75,3 +75,4 @@ compare_folders(
     r"D:\do an xu ly anh\code\origin",
     output="result.txt"
 )
+
